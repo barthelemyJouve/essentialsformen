@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: rgb(4, 4, 4);
+  text-transform: uppercase;
+  &:hover {
+    scale: 110%;
+    color: rgba(4, 4, 4, 0.768);
+  }
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
