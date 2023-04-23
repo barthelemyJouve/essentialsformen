@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "font1";
+  src: url(../assets/font/Blinker-Regular.ttf);
+}
+
+$font1: "font1", sans-serif;
+
+$black1: rgb(4, 4, 4);
+$white1: rgb(250, 249, 252);
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,17 +23,6 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
-}
-a {
-  text-decoration: none;
-  color: rgb(4, 4, 4);
-  text-transform: uppercase;
-  &:hover {
-    scale: 110%;
-    color: rgba(4, 4, 4, 0.768);
-  }
-}
-ul {
-  display: flex;
-  justify-content: space-between;
+  font-family: $font1;
+  background: $white1;
 }

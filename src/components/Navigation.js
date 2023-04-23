@@ -4,23 +4,47 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <div className="navigation">
+      <div className="navigationBurgerMenu">
+        <div className="navigationBurgerMenuOpen">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div className="navigationBurgerMenuClose">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div className="navigationLogo">Men's Essentials</div>
       <ul>
-        <NavLink to="/">
+        <NavLink className={(nav) => (nav.isActive ? "nav-active" : "")} to="/">
           <li>Home</li>
         </NavLink>
-        <NavLink to="/shop">
+        <NavLink
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          to="/shop"
+        >
           <li>Shop</li>
         </NavLink>
-        <NavLink to="/categories">
+        <NavLink
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          to="/categories"
+        >
           <li>Categories</li>
         </NavLink>
-        <NavLink to="/blog">
+        <NavLink
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          to="/blog"
+        >
           <li>Blog</li>
         </NavLink>
-        <NavLink to="/about">
+        <NavLink
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          to="/about"
+        >
           <li>About us</li>
         </NavLink>
-        <NavLink to="/contact">
+        <NavLink
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          to="/contact"
+        >
           <li>Contact</li>
         </NavLink>
       </ul>
