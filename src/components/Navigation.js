@@ -12,7 +12,7 @@ const Navigation = () => {
           <i class="fa-solid fa-xmark"></i>
         </div>
       </div>
-      <div className="navigationLogo">Men's Essentials</div>
+      <div className="navigationLogo"></div>
       <ul>
         <NavLink className={(nav) => (nav.isActive ? "nav-active" : "")} to="/">
           <li>Home</li>
