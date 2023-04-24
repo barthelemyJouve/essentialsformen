@@ -1,0 +1,39 @@
+footer {
+  background: $black1;
+  color: $white1;
+  height: 50vh;
+  .footer-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 20px 0;
+    .footer-logo-socials {
+      display: grid;
+      grid-template-columns: 397px 1fr;
+      gap: 35px;
+
+      .footer-logo {
+        background: url(../../assets/img/logo-footer.png) center/cover;
+        height: 96px;
+        width: 397px;
+      }
+      .footer-social-media {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        span {
+          display: inline-block;
+          font-size: 2rem;
+          transition: 0.3s ease-out;
+          cursor: pointer;
+          &:hover {
+            color: $grey1;
+            scale: 105%;
+          }
+        }
+      }
+    }
+  }
+}

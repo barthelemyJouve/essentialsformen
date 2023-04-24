@@ -1,11 +1,12 @@
 import React from "react";
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
     <div>
-      <Navigation />
       <header>
+        <Navigation />
         <h1>About Us</h1>
       </header>
       <main>
@@ -75,6 +76,7 @@ const About = () => {
           </p>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
