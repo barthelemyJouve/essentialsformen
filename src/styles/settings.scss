@@ -6,8 +6,10 @@
 $font1: "font1", sans-serif;
 
 $black1: rgb(4, 4, 4);
+$black2: rgb(15, 14, 12);
 $white1: rgb(250, 249, 252);
 $grey1: rgb(105, 105, 105);
+$grey2: rgb(210, 210, 210);
 
 @mixin flexCenter {
   display: flex;

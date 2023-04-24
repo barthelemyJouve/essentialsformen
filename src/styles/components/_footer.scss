@@ -1,7 +1,8 @@
 footer {
-  background: $black1;
+  background: $black2;
   color: $white1;
   height: 50vh;
+  border-radius: 3px;
   .footer-content {
     width: 100%;
     max-width: 1200px;
@@ -31,6 +32,73 @@ footer {
           &:hover {
             color: $grey1;
             scale: 105%;
+          }
+        }
+      }
+    }
+    .footer-navigation {
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 40px 0;
+        a {
+          font-size: 1.3rem;
+          color: $white1;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          text-decoration: none;
+          border: 2px solid $white1;
+          border-radius: 5px;
+          padding: 5px 15px;
+          cursor: pointer;
+          transition: 0.3 ease-out;
+          &:hover {
+            color: $grey1;
+            scale: 105%;
+            border: 2px solid $grey1;
+          }
+        }
+      }
+    }
+    .footer-newsletter {
+      @include flexCenter;
+      flex-direction: column;
+      h2 {
+        color: $white1;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        background-image: linear-gradient(
+            transparent calc(100% - 1px),
+            #000000 1px
+          ),
+          linear-gradient(transparent calc(100% - 1px), #cbcbcb 1px);
+        background-size: 0% 6px, 100% 6px;
+        background-position: 0 bottom, 0 bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+      }
+      input[type="email"],
+      input[type="submit"] {
+        font-family: $font1;
+        font-size: 1rem;
+        color: $black1;
+        text-align: center;
+        border: none;
+        border-radius: 2px;
+        background-color: $white1;
+        padding: 5px 30px;
+        margin: 0 5px;
+        &:focus {
+          background: $black1;
+          color: $white1;
+        }
+        &::placeholder {
+          color: $black1;
+          font-size: 1rem;
+          &:focus {
+            color: $white1;
           }
         }
       }

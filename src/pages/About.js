@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 
 const About = () => {
   return (
-    <div>
-      <header>
+    <div className="about-page">
+      <header className="about-header">
         <Navigation />
         <h1>About Us</h1>
       </header>
