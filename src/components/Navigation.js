@@ -48,6 +48,9 @@ const Navigation = () => {
           <li>Contact</li>
         </NavLink>
       </ul>
+      <div className="navigation-shopping-basket">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
     </div>
   );
 };

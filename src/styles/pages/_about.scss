@@ -1,0 +1,67 @@
+header {
+  background: url(../../assets/img/about-header.jpg) center/cover;
+  height: 65vh;
+  position: relative;
+  margin: 5px 0;
+  h1 {
+    color: $white1;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+  }
+}
+main {
+  section {
+    max-width: 1200px;
+    margin: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
+    padding: 20px 10px;
+    border-radius: 3px;
+  }
+
+  h2 {
+    color: $black1;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin: 5px 0;
+  }
+  p {
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: $grey1;
+  }
+  .about-contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: url(../../assets/img/about-contact.webp) center/cover;
+    height: 50vh;
+    .about-contact-left {
+      @include flexCenter;
+      h2 {
+        color: $white1;
+      }
+    }
+    .about-contact-right {
+      @include flexCenter;
+
+      a {
+        color: $white1;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 900;
+        border: 3px solid $white1;
+        border-radius: 30px;
+        padding: 10px 25px;
+        transition: 0.3s ease-out;
+        &:hover {
+          color: $grey1;
+          border: 3px solid $grey1;
+          scale: 105%;
+        }
+      }
+    }
+  }
+}
