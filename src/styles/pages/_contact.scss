@@ -23,7 +23,7 @@
     grid-template-columns: 50% 50%;
     gap: 5px;
     max-width: 1200px;
-    margin: 10px auto;
+    margin: 20px auto;
     height: 50vh;
 
     box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
@@ -87,18 +87,17 @@
           "ta ta"
           "ln fn"
           "ema sub";
-        gap: 5px;
+        gap: 10px;
         height: 85%;
         input[type="text"],
         input[type="email"],
         input[type="submit"] {
           border: none;
-          border-radius: 5px;
+          border-radius: 30px;
           padding: 10px;
           text-align: center;
-
-          background: $grey1;
-          color: $white1;
+          background: $white1;
+          color: $black1;
           font-family: $font1;
           font-size: 1.2rem;
           &:focus {
@@ -112,20 +111,25 @@
           font-size: 1.2rem;
           border-radius: 3px;
           padding: 10px;
-          background: $grey1;
-          color: $white1;
+          background: $white1;
+          color: $black2;
           grid-area: ta;
+          resize: none;
           &:focus {
             background: $black1;
             color: $white1;
           }
         }
         input[type="submit"] {
-          background: $black2;
+          background: $black1;
+          color: $white1;
           border-radius: 30px;
-          padding: 10px 35px;
+          width: 80%;
+          height: 90%;
+          margin: auto;
           font-weight: 900;
           text-transform: uppercase;
+          transition: 0.3s ease-out;
           &:hover {
             color: $black1;
             background: $grey1;

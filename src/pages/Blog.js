@@ -1,11 +1,18 @@
 import React from "react";
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+import Article from "../components/Article";
 
 const Blog = () => {
   return (
-    <div>
-      <Navigation />
-      <h1>Blog</h1>
+    <div className="blog-page">
+      <header>
+        <Navigation />
+        <h1>Blog</h1>
+      </header>
+      <main>
+        <Article />
+      </main>
       <div>
         <h2>About men's skincare</h2>
         <p>
@@ -38,6 +45,7 @@ const Blog = () => {
           voluptatum sit!
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const Categories = () => {
   return (
@@ -12,6 +13,7 @@ const Categories = () => {
         <li>Clothes</li>
         <li>furniture</li>
       </ul>
+      <Footer />
     </div>
   );
 };
