@@ -25,14 +25,14 @@
     .header-button {
       font-size: 3.5rem;
       position: absolute;
-      bottom: 35%;
+      bottom: 2%;
       left: 50%;
       transform: translateX(-50%);
       a {
-        color: $grey1;
-        border: 5px solid $grey1;
+        color: $white1;
+        border: 3px solid $white1;
         border-radius: 2000px;
-        padding: 0 15px;
+        padding: 1px 15px;
         &:hover {
           color: $black2;
           border-color: $black2;

@@ -2,6 +2,7 @@ footer {
   background: $black2;
   color: $white1;
   border-radius: 3px;
+  padding: 0 19px;
   .footer-content {
     width: 100%;
     max-width: 1200px;
@@ -12,16 +13,29 @@ footer {
       display: grid;
       grid-template-columns: 397px 1fr;
       gap: 35px;
+      @media screen and (max-width: 662px) {
+        gap: 10px;
+      }
+      @media screen and (max-width: 637px) {
+        @include flexCenter;
+      }
 
       .footer-logo {
         background: url(../../assets/img/logo-footer.png) center/cover;
         height: 96px;
         width: 397px;
+        @media screen and (max-width: 637px) {
+          display: none;
+        }
       }
       .footer-social-media {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        gap: 5px;
+        @media screen and (max-width: 637px) {
+          gap: 20px;
+        }
 
         span {
           display: inline-block;
@@ -39,8 +53,17 @@ footer {
       ul {
         display: flex;
         justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
         gap: 40px;
         margin: 40px 0;
+        @media screen and (max-width: 904px) {
+          gap: 10px;
+        }
+        @media screen and (max-width: 637px) {
+          margin: 15px;
+        }
         a {
           font-size: 1.3rem;
           color: $white1;
@@ -56,6 +79,11 @@ footer {
             color: $grey1;
             scale: 105%;
             border: 2px solid $grey1;
+          }
+          @media screen and (max-width: 904px) {
+            font-size: 1rem;
+            letter-spacing: 0;
+            padding: 5px;
           }
         }
       }
@@ -78,27 +106,43 @@ footer {
         padding-bottom: 6px;
         margin-bottom: 20px;
       }
-      input[type="email"],
-      input[type="submit"] {
-        font-family: $font1;
-        font-size: 1rem;
-        color: $black1;
-        text-align: center;
-        border: none;
-        border-radius: 2px;
-        background-color: $white1;
-        padding: 5px 30px;
-        margin: 0 5px;
-        &:focus {
-          background: $black1;
-          color: $white1;
+      form {
+        @media screen and (max-width: 388px) {
+          @include flexCenter;
+          flex-direction: column;
+          gap: 10px;
         }
-        &::placeholder {
-          color: $black1;
+
+        input[type="email"],
+        input[type="submit"] {
+          font-family: $font1;
           font-size: 1rem;
+          color: $black1;
+          text-align: center;
+          border: none;
+          border-radius: 2px;
+          background-color: $white1;
+          padding: 5px 30px;
+          margin: 0 5px;
           &:focus {
+            background: $black1;
             color: $white1;
           }
+          &::placeholder {
+            color: $black1;
+            font-size: 1rem;
+            &:focus {
+              color: $white1;
+            }
+          }
+          @media screen and (max-width: 388px) {
+            display: block;
+          }
+        }
+        input[type="submit"] {
+          font-weight: 900;
+          text-transform: uppercase;
+          background: $grey1;
         }
       }
     }
