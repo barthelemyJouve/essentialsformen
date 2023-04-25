@@ -1,0 +1,16 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Titre de l'article 1",
+      "content": "Contenu de l'article 1",
+      "image": "https://example.com/image1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Titre de l'article 2",
+      "content": "Contenu de l'article 2",
+      "image": "https://example.com/image2.jpg"
+    }
+  ]
+}

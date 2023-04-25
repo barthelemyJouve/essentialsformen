@@ -1,0 +1,15 @@
+.blog-page {
+  header {
+    background: url(../../assets/img/home-header.webp) center/ cover;
+    height: 50vh;
+  }
+  main {
+    height: 50vh;
+    padding: 0 19px;
+    max-width: 1200px;
+    margin: 10px auto;
+    @include flexCenter;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
+  }
+}
