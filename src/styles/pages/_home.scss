@@ -2,6 +2,7 @@
   header {
     height: 90vh;
     background: url(../../assets/img/home-header.jpg) center/cover;
+    position: relative;
 
     h1 {
       position: absolute;
@@ -22,9 +23,9 @@
       padding-bottom: 6px;
     }
     .header-button {
-      font-size: 4.5rem;
+      font-size: 3.5rem;
       position: absolute;
-      bottom: 37%;
+      bottom: 35%;
       left: 50%;
       transform: translateX(-50%);
       a {
