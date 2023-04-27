@@ -11,27 +11,27 @@ const Blog = () => {
         <h1>Welcome to our Blog</h1>
       </header>
       <main>
-        <a href="">
+        <a href="/blog/tongue-scrapper">
           <div className="article-container">
             <Article id={1} />
           </div>
         </a>
-        <a href="">
+        <a href="/blog/push-up-bars">
           <div className="article-container">
             <Article id={2} />
           </div>
         </a>
-        <a href="">
+        <a href="/blog/caps">
           <div className="article-container">
             <Article id={3} />
           </div>
         </a>
-        <a href="">
+        <a href="/blog/smart-watch">
           <div className="article-container">
             <Article id={4} />
           </div>
         </a>
-        <a href="">
+        <a href="/blog/bag">
           <div className="article-container">
             <Article id={5} />
           </div>

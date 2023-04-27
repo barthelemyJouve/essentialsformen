@@ -6,6 +6,11 @@ import Categories from "./pages/Categories";
 import Shop from "./pages/Shop";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import TongueScrapper from "./pages/blog-article-pages/TongueScrapper";
+import PushUpBars from "./pages/blog-article-pages/PushUpBars";
+import Caps from "./pages/blog-article-pages/Caps";
+import SmartWatch from "./pages/blog-article-pages/SmartWatch";
+import Bag from "./pages/blog-article-pages/Bag";
 
 const App = () => {
   return (
@@ -18,6 +23,11 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/blog/tongue-scrapper" element={<TongueScrapper />} />
+        <Route path="/blog/push-up-bars" element={<PushUpBars />} />
+        <Route path="/blog/bag" element={<Bag />} />
+        <Route path="/blog/caps" element={<Caps />} />
+        <Route path="/blog/smart-watch" element={<SmartWatch />} />
       </Routes>
     </BrowserRouter>
   );
