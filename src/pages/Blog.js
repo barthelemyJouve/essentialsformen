@@ -8,23 +8,34 @@ const Blog = () => {
     <div className="blog-page">
       <header>
         <Navigation />
+        <h1>Welcome to our Blog</h1>
       </header>
       <main>
-        <div className="article-container">
-          <Article id={1} />
-        </div>
-        <div className="article-container">
-          <Article id={2} />
-        </div>
-        <div className="article-container">
-          <Article id={3} />
-        </div>
-        <div className="article-container">
-          <Article id={4} />
-        </div>
-        <div className="article-container">
-          <Article id={5} />
-        </div>
+        <a href="">
+          <div className="article-container">
+            <Article id={1} />
+          </div>
+        </a>
+        <a href="">
+          <div className="article-container">
+            <Article id={2} />
+          </div>
+        </a>
+        <a href="">
+          <div className="article-container">
+            <Article id={3} />
+          </div>
+        </a>
+        <a href="">
+          <div className="article-container">
+            <Article id={4} />
+          </div>
+        </a>
+        <a href="">
+          <div className="article-container">
+            <Article id={5} />
+          </div>
+        </a>
       </main>
       <Footer />
     </div>
