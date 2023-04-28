@@ -206,6 +206,9 @@ const ContentPageBlog = ({ id }) => {
       <main>
         <div className="image-article">
           <img src={article.image} alt={article.title} />
+          <div className="article-page-link">
+            <a href={"./blog" + article.title}>Shop Now</a>
+          </div>
         </div>
         <p>{article.content}</p>
         <div className="article-page-link">

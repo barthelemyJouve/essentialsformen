@@ -36,9 +36,19 @@
     .image-article {
       text-align: center;
       padding: 20px 0;
+      @include flexCenter;
+      justify-content: space-evenly;
+      flex-wrap: wrap-reverse;
+      @media screen and (max-width: 847px) {
+        padding-top: 0;
+        padding-bottom: 20px;
+      }
+
       img {
+        position: relative;
         max-width: 90%;
         max-height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
       }
     }
     p {
@@ -50,6 +60,9 @@
     .article-page-link {
       @include flexCenter;
       padding: 40px 0;
+      @media screen and (max-width: 847px) {
+        padding: 0;
+      }
 
       a {
         margin: 20px;

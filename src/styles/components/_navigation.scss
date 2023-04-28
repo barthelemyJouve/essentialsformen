@@ -20,13 +20,77 @@
     cursor: pointer;
     @include flexCenter;
 
+    .navigationBurgerMenuOpen {
+      display: block;
+    }
+
+    .navigationBurgerMenuClose {
+      // display: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .side-bar-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 75%;
+      max-width: 350px;
+      height: 100%;
+      background-color: $white1;
+      z-index: 999;
+      padding: 0 40px;
+      transition: transform 0.3s ease;
+      box-shadow: rgba(0, 0, 0, 0.464) 0px 2px 20px;
+      border-radius: 10px;
+
+      &.open {
+        transform: translateX(0%);
+        opacity: 0.95;
+      }
+
+      ul {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
+
+        @media (max-width: 720px) {
+          display: flex;
+        }
+
+        li {
+          @include flexCenter;
+          border-radius: 10px;
+          height: 60px;
+          width: 150px;
+          // height: 100%;
+          // width: 100%;
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.18);
+          }
+        }
+      }
+    }
+
     &:hover {
       color: $grey1;
-      scale: 110%;
       transition: 0.3s ease-in;
     }
-    .navigationBurgerMenuClose {
-      display: none;
+
+    &.open {
+      .navigationBurgerMenuOpen {
+        display: none;
+      }
+
+      .navigationBurgerMenuClose {
+        display: block;
+      }
     }
   }
   .navigationLogo {
