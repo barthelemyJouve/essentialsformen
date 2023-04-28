@@ -1,6 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
+const links = [
+  { title: "Home", url: "/" },
+  { title: "Shop", url: "/shop" },
+];
+
 const Navigation = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const navigationRef = useRef(null);
@@ -35,6 +40,14 @@ const Navigation = () => {
         {isSidebarOpen && (
           <div className="side-bar-menu" id="side-bar">
             <ul>
+              {links.map((link) => (
+                <NavLink
+                  className={(nav) => (nav.isActive ? "nav-active" : "")}
+                  to={link.url}
+                >
+                  <li>{link.title}</li>
+                </NavLink>
+              ))}
               <NavLink
                 className={(nav) => (nav.isActive ? "nav-active" : "")}
                 to="/"

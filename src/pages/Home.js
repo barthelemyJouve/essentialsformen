@@ -11,7 +11,7 @@ const Home = () => {
         <h1>Men's Essentials</h1>
         <div className="header-button">
           <a href="#best-products">
-            <i class="fa-solid fa-arrow-down"></i>
+            <i className="fa-solid fa-arrow-down"></i>
           </a>
         </div>
       </header>

@@ -10,22 +10,22 @@ const Footer = () => {
             <div className="footer-logo"></div>
             <div className="footer-social-media">
               <span>
-                <i class="fa-brands fa-square-twitter"></i>
+                <i className="fa-brands fa-square-twitter"></i>
               </span>
               <span>
-                <i class="fa-brands fa-square-facebook"></i>
+                <i className="fa-brands fa-square-facebook"></i>
               </span>
               <span>
-                <i class="fa-brands fa-square-instagram"></i>
+                <i className="fa-brands fa-square-instagram"></i>
               </span>
               <span>
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </span>
               <span>
-                <i class="fa-brands fa-square-youtube"></i>
+                <i className="fa-brands fa-square-youtube"></i>
               </span>
               <span>
-                <i class="fa-brands fa-square-google-plus"></i>
+                <i className="fa-brands fa-square-google-plus"></i>
               </span>
             </div>
           </div>
