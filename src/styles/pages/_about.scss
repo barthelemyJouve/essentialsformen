@@ -19,6 +19,14 @@
       background-position: 0 bottom, 0 bottom;
       background-repeat: no-repeat;
       padding-bottom: 6px;
+      @media screen and (max-width: 960px) {
+        color: $grey1;
+        background-image: linear-gradient(
+            transparent calc(100% - 1px),
+            #000000 1px
+          ),
+          linear-gradient(transparent calc(100% - 1px), $grey1 1px);
+      }
     }
   }
   main {
@@ -46,7 +54,7 @@
     }
     p {
       margin-top: 20px;
-      line-height: 24px;
+      line-height: 27px;
       letter-spacing: 1px;
       color: $grey1;
     }
@@ -55,10 +63,18 @@
       grid-template-columns: 50% 50%;
       background: url(../../assets/img/about-contact.webp) center/cover;
       height: 50vh;
+      @media screen and (max-width: 800px) {
+        @include flexCenter;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
       .about-contact-left {
         @include flexCenter;
         h2 {
           color: $white1;
+          @media screen and (max-width: 400px) {
+            font-size: 2rem;
+          }
         }
       }
       .about-contact-right {

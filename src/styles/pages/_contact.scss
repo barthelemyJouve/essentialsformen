@@ -32,7 +32,6 @@
     gap: 10px;
     max-width: 1200px;
     margin: 20px auto;
-    box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
 
     @media screen and (max-width: 940px) {
       @include flexCenter;
@@ -47,9 +46,7 @@
       display: grid;
       grid-template-rows: 25% 25% 25% 25%;
       background: $grey2;
-      @media screen and (max-width: 940px) {
-        box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
-      }
+      box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
 
       h2 {
         letter-spacing: 1px;
@@ -95,9 +92,8 @@
       height: 100%;
       padding: 30px 20px;
       background: $grey2;
-      @media screen and (max-width: 940px) {
-        box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
-      }
+      box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
+
       h2 {
         text-align: center;
         letter-spacing: 1px;
