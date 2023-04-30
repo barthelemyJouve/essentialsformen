@@ -4,6 +4,10 @@ import { NavLink } from "react-router-dom";
 const links = [
   { title: "Home", url: "/" },
   { title: "Shop", url: "/shop" },
+  { title: "Categories", url: "/categories" },
+  { title: "Blog", url: "/blog" },
+  { title: "About us", url: "/about" },
+  { title: "Contact", url: "/contact" },
 ];
 
 const Navigation = () => {
@@ -48,42 +52,6 @@ const Navigation = () => {
                   <li>{link.title}</li>
                 </NavLink>
               ))}
-              <NavLink
-                className={(nav) => (nav.isActive ? "nav-active" : "")}
-                to="/"
-              >
-                <li>Home</li>
-              </NavLink>
-              <NavLink
-                className={(nav) => (nav.isActive ? "nav-active" : "")}
-                to="/shop"
-              >
-                <li>Shop</li>
-              </NavLink>
-              <NavLink
-                className={(nav) => (nav.isActive ? "nav-active" : "")}
-                to="/categories"
-              >
-                <li>Categories</li>
-              </NavLink>
-              <NavLink
-                className={(nav) => (nav.isActive ? "nav-active" : "")}
-                to="/blog"
-              >
-                <li>Blog</li>
-              </NavLink>
-              <NavLink
-                className={(nav) => (nav.isActive ? "nav-active" : "")}
-                to="/about"
-              >
-                <li>About us</li>
-              </NavLink>
-              <NavLink
-                className={(nav) => (nav.isActive ? "nav-active" : "")}
-                to="/contact"
-              >
-                <li>Contact</li>
-              </NavLink>
             </ul>
             <div
               className={`navigationBurgerMenuClose${
@@ -99,40 +67,16 @@ const Navigation = () => {
       <div className="navigationLogo"></div>
 
       <ul>
-        <NavLink className={(nav) => (nav.isActive ? "nav-active" : "")} to="/">
-          <li>Home</li>
-        </NavLink>
-        <NavLink
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-          to="/shop"
-        >
-          <li>Shop</li>
-        </NavLink>
-        <NavLink
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-          to="/categories"
-        >
-          <li>Categories</li>
-        </NavLink>
-        <NavLink
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-          to="/blog"
-        >
-          <li>Blog</li>
-        </NavLink>
-        <NavLink
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-          to="/about"
-        >
-          <li>About us</li>
-        </NavLink>
-        <NavLink
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-          to="/contact"
-        >
-          <li>Contact</li>
-        </NavLink>
+        {links.map((link) => (
+          <NavLink
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            to={link.url}
+          >
+            <li>{link.title}</li>
+          </NavLink>
+        ))}
       </ul>
+
       <div className="navigation-shopping-basket">
         <i className="fa-solid fa-cart-shopping"></i>
       </div>
